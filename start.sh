@@ -35,5 +35,6 @@ else
     echo "There is no script $PRE_START_PATH"
 fi
 
-# Start Gunicorn
+# Start Gunicorn + Uvicorn
 exec gunicorn -k uvicorn.workers.UvicornWorker -c "$GUNICORN_CONF" "$APP_MODULE"
+
