@@ -5,7 +5,7 @@ LABEL maintainer="Konstantin Cherednichenko <dshadowukraine@gmail.com>"
 
 # Installing base packages
 RUN apk add --no-cache --virtual .build-deps gcc libc-dev make \
-    && pip install --no-cache-dir -r uvicorn gunicorn fastapi \
+    && pip install --no-cache-dir uvicorn gunicorn fastapi \
     && apk del .build-deps gcc libc-dev make
 
 COPY ./start.sh /start.sh
