@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM python:3.8-alpine
 # Based on tiangolo/uvicorn-gunicorn-fastapi:python3.7
 
 LABEL maintainer="Konstantin Cherednichenko <dshadowukraine@gmail.com>"
